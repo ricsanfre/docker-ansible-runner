@@ -1,0 +1,7 @@
+- name: get facts and print them
+  hosts: localhost
+  gather_facts: true
+  tasks:
+    - name: Print
+      debug:
+        var: ansible_facts
